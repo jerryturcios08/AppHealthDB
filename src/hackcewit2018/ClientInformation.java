@@ -10,5 +10,7 @@ package hackcewit2018;
  * @author dsli
  */
 public class ClientInformation {
+    private String healthProvider;
+    private long customerIDno;
     
 }
