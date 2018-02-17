@@ -25,6 +25,7 @@ import javafx.stage.Stage;
  * @author jerryturcios08
  */
 public class HackCEWIT2018 extends Application {
+
     @Override
     public void start(Stage primaryStage) {
         GridPane grid = new GridPane();
@@ -37,6 +38,7 @@ public class HackCEWIT2018 extends Application {
 
         primaryStage.setTitle("App Health DB");
         primaryStage.setScene(scene);
+        primaryStage.resizableProperty().setValue(Boolean.FALSE);
         primaryStage.show();
 
         Label scenetitle = new Label("App Health Databases 2018");
