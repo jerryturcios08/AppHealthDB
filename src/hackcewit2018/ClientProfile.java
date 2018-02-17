@@ -110,7 +110,7 @@ class Address {
 enum Gender {
     M,
     F,
-    T
+    T // Trans
 }
 
 enum State {
