@@ -21,7 +21,7 @@ import javafx.stage.Stage;
  *
  * @author dsli
  */
-public class HackCEWIT2018 extends Application {
+public class UserLogin extends Application {
     
     @Override
     public void start(Stage primaryStage) {
