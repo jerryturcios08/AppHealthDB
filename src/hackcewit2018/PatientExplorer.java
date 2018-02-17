@@ -10,9 +10,7 @@ import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 public class PatientExplorer {
-
     public void explorer(Stage secondaryStage) {
-        
         HBox topBar = new HBox();
         TextField searchBar = new TextField();
         Button search = new Button("Search");
@@ -28,6 +26,5 @@ public class PatientExplorer {
         
         VBox patientInfo = new VBox();
         ClientProfile currentPatient = (ClientProfile)patients.getSelectionModel().getSelectedItem();
-        
     }
 }
