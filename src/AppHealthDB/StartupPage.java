@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package hackcewit2018;
+package AppHealthDB;
 
 import javafx.application.Application;
 import javafx.geometry.Insets;
@@ -22,7 +22,7 @@ import javafx.stage.Stage;
  * @author dsli
  * @author jerryturcios08
  */
-public class HackCEWIT2018 extends Application {
+public class StartupPage extends Application {
     @Override
     public void start(Stage primaryStage) {
         GridPane grid = new GridPane();
@@ -42,7 +42,7 @@ public class HackCEWIT2018 extends Application {
         scenetitle.setFont(Font.font("Tahoma", FontWeight.NORMAL, 16));
         grid.add(scenetitle, 0, 0, 2, 1);
 
-        Label username = new Label("User Name:");
+        Label username = new Label("Username:");
         grid.add(username, 0, 1);
         TextField userTextField = new TextField();
         grid.add(userTextField, 1, 1);
@@ -74,12 +74,12 @@ public class HackCEWIT2018 extends Application {
         final Label actiontarget = new Label();
         grid.add(actiontarget, 0, 6);
 
-        signUpBtn.setOnAction((e -> SignUpPage()));
-        signInBtn.setOnAction(e -> System.out.println(""));
+        signUpBtn.setOnAction(e -> primaryStage.close());
+        signUpBtn.setOnAction(e -> SignUpPage());
     }
 
     private void SignUpPage() {
-        Stage primaryStage = new Stage();
+        Stage secondaryStage = new Stage();
         GridPane grid = new GridPane();
         grid.setAlignment(Pos.CENTER);
         grid.setHgap(10);
@@ -88,12 +88,47 @@ public class HackCEWIT2018 extends Application {
 
         Scene scene = new Scene(grid, 800, 500);
 
-        primaryStage.setTitle("App Health DB");
-        primaryStage.setScene(scene);
-        primaryStage.resizableProperty().setValue(Boolean.FALSE);
-        primaryStage.show();
+        secondaryStage.setTitle("App Health DB");
+        secondaryStage.setScene(scene);
+        secondaryStage.resizableProperty().setValue(Boolean.FALSE);
+        secondaryStage.show();
 
+        Label scenetitle = new Label("Sign Up");
+        scenetitle.setFont(Font.font("Tahoma", FontWeight.NORMAL, 16));
+        grid.add(scenetitle, 0, 0, 2, 1);
 
+        Label firstName = new Label("First name:");
+        grid.add(firstName, 0, 1);
+        TextField firstNameTextField = new TextField();
+        grid.add(firstNameTextField, 1, 1);
+
+        Label lastName = new Label("Last name:");
+        grid.add(lastName, 0, 2);
+        TextField lastNameTextField = new TextField();
+        grid.add(lastNameTextField, 1, 2);
+
+        Label username = new Label("Username:");
+        grid.add(username, 0, 3);
+        TextField usernameTextField = new TextField();
+        grid.add(usernameTextField, 1, 3);
+
+        Label password = new Label("Password:");
+        grid.add(password, 0, 4);
+        PasswordField pwField = new PasswordField();
+        grid.add(pwField, 1, 4);
+
+        Label email = new Label("Email:");
+        grid.add(email, 0, 5);
+        TextField emailTextField = new TextField();
+        grid.add(emailTextField, 1, 5);
+
+        Button btn = new Button("Enter");
+        HBox hbBtn = new HBox(10);
+        hbBtn.setAlignment(Pos.BOTTOM_RIGHT);
+        hbBtn.getChildren().add(btn);
+        grid.add(hbBtn, 1, 6);
+
+        btn.setOnAction(e -> secondaryStage.hide());
     }
 
     /**

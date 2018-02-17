@@ -1,4 +1,4 @@
-package hackcewit2018;
+package AppHealthDB;
 
 import java.util.Date;
 import javafx.scene.image.Image;
