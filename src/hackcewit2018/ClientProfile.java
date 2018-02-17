@@ -1,6 +1,7 @@
 package hackcewit2018;
 
 import java.util.Date;
+import javafx.scene.image.Image;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -20,6 +21,8 @@ public class ClientProfile {
     private Date dateOfBirth;
     private Gender gender;
     private String ssn;
+    
+    private Image image;
 
     public String getName() {
         return name;
@@ -53,10 +56,13 @@ public class ClientProfile {
         this.ssn = ssn;
     }
     
-    public ClientProfile(String name) {
+    public ClientProfile(String name, String address, String city, State state, int zip, Date dateOfBirth, Gender gender, String ssn, Image image) {
         this.name = name;
-        //this.address = address;
-        
+        this.address = new Address(address, city, state, zip);
+        this.dateOfBirth = dateOfBirth;
+        this.gender = gender;
+        this.ssn = ssn;
+        this.image = image;
     }
     
 }
@@ -65,6 +71,7 @@ class Address {
     private String address;
     private String city;
     private State state;
+    private int zip;
 
     public String getAddress() {
         return address;
@@ -97,13 +104,17 @@ class Address {
     public void setZip(int zip) {
         this.zip = zip;
     }
-    private int zip;
     
     public Address(String address, String city, State state, int zip) {
         this.address = address;
         this.city = city;
         this.state = state;
         this.zip = zip;
+    }
+    
+    @Override
+    public String toString() {
+        return this.address + "\n" + this.city + ", " + this.state + " " + this.zip;
     }
 }
 
