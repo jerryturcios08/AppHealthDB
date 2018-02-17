@@ -6,8 +6,6 @@
 package hackcewit2018;
 
 import javafx.application.Application;
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
@@ -15,19 +13,11 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
-<<<<<<< HEAD
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
-import javafx.scene.layout.StackPane;
 import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
-=======
-import javafx.scene.layout.HBox;
-import javafx.scene.layout.VBox;
->>>>>>> 6433dc2742e7763977ca4955522a67a0d779f01e
 import javafx.stage.Stage;
-
-import java.awt.*;
 
 /**
  *
@@ -38,7 +28,6 @@ public class HackCEWIT2018 extends Application {
     
     @Override
     public void start(Stage primaryStage) {
-<<<<<<< HEAD
         GridPane grid = new GridPane();
         grid.setAlignment(Pos.CENTER);
         grid.setHgap(10);
@@ -84,5 +73,4 @@ public class HackCEWIT2018 extends Application {
     public static void main(String[] args) {
         launch(args);
     }
-    
 }
