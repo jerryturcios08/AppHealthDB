@@ -9,14 +9,12 @@ import javafx.application.Application;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.PasswordField;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
+import javafx.scene.text.TextFlow;
 import javafx.stage.Stage;
 
 /**
@@ -25,7 +23,6 @@ import javafx.stage.Stage;
  * @author jerryturcios08
  */
 public class HackCEWIT2018 extends Application {
-
     @Override
     public void start(Stage primaryStage) {
         GridPane grid = new GridPane();
@@ -67,10 +64,36 @@ public class HackCEWIT2018 extends Application {
         hbSignInBtn.getChildren().add(signInBtn);
         grid.add(hbSignInBtn, 1, 4);
 
-        final Label actiontarget = new Label();
-        grid.add(actiontarget, 1, 6);
+        TextFlow flow = new TextFlow(
+                new Hyperlink("Forgot password?")
+        );
+        HBox hbFlow = new HBox(10);
+        hbFlow.setAlignment(Pos.BOTTOM_LEFT);
+        grid.add(flow, 0, 6);
 
+        final Label actiontarget = new Label();
+        grid.add(actiontarget, 0, 6);
+
+        signUpBtn.setOnAction((e -> SignUpPage()));
         signInBtn.setOnAction(e -> System.out.println(""));
+    }
+
+    private void SignUpPage() {
+        Stage primaryStage = new Stage();
+        GridPane grid = new GridPane();
+        grid.setAlignment(Pos.CENTER);
+        grid.setHgap(10);
+        grid.setVgap(10);
+        grid.setPadding(new Insets(25, 25, 25, 25));
+
+        Scene scene = new Scene(grid, 800, 500);
+
+        primaryStage.setTitle("App Health DB");
+        primaryStage.setScene(scene);
+        primaryStage.resizableProperty().setValue(Boolean.FALSE);
+        primaryStage.show();
+
+
     }
 
     /**
