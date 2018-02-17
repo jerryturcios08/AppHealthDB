@@ -25,7 +25,6 @@ import javafx.stage.Stage;
  * @author jerryturcios08
  */
 public class HackCEWIT2018 extends Application {
-    
     @Override
     public void start(Stage primaryStage) {
         GridPane grid = new GridPane();
@@ -54,17 +53,22 @@ public class HackCEWIT2018 extends Application {
         PasswordField pwBox = new PasswordField();
         grid.add(pwBox, 1, 2);
 
-        Button btn = new Button("Sign in");
-        HBox hbBtn = new HBox(10);
-        hbBtn.setAlignment(Pos.BOTTOM_RIGHT);
-        hbBtn.getChildren().add(btn);
-        grid.add(hbBtn, 1, 4);
+        Button signUpBtn = new Button("Sign up");
+        HBox hbSignUpBtn = new HBox(10);
+        hbSignUpBtn.setAlignment(Pos.BOTTOM_LEFT);
+        hbSignUpBtn.getChildren().add(signUpBtn);
+        grid.add(hbSignUpBtn, 0, 4);
+
+        Button signInBtn = new Button("Sign in");
+        HBox hbSignInBtn = new HBox(10);
+        hbSignInBtn.setAlignment(Pos.BOTTOM_RIGHT);
+        hbSignInBtn.getChildren().add(signInBtn);
+        grid.add(hbSignInBtn, 1, 4);
 
         final Label actiontarget = new Label();
         grid.add(actiontarget, 1, 6);
 
-        // TODO: Remove this line and add a message box for validation input
-        btn.setOnAction(e -> System.out.println("Sign In button was pressed!"));
+        signInBtn.setOnAction(e -> System.out.println("Test"));
     }
 
     /**
