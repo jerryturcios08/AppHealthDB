@@ -74,8 +74,13 @@ public class StartupPage extends Application {
         final Label actiontarget = new Label();
         grid.add(actiontarget, 0, 6);
 
-        signUpBtn.setOnAction(e -> primaryStage.close());
+        PatientExplorer transfer = new PatientExplorer();
+
+        // TODO: Create a way for the primary window to close
+        // TODO: Create a way for the window to open
+
         signUpBtn.setOnAction(e -> SignUpPage());
+        signInBtn.setOnAction(e -> transfer.explorer());
     }
 
     private void SignUpPage() {
