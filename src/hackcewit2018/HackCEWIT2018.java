@@ -68,7 +68,7 @@ public class HackCEWIT2018 extends Application {
         final Label actiontarget = new Label();
         grid.add(actiontarget, 1, 6);
 
-        signInBtn.setOnAction(e -> System.out.println("Test"));
+        signInBtn.setOnAction(e -> System.out.println(""));
     }
 
     /**
