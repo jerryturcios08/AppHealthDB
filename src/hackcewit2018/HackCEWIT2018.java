@@ -10,7 +10,11 @@ import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.layout.StackPane;
+import javafx.scene.control.Label;
+import javafx.scene.control.PasswordField;
+import javafx.scene.control.TextField;
+import javafx.scene.layout.HBox;
+import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 /**
@@ -22,7 +26,7 @@ public class HackCEWIT2018 extends Application {
     @Override
     public void start(Stage primaryStage) {
         Button btn = new Button();
-        btn.setText("Say 'Hello World'");
+        btn.setText("Login");
         btn.setOnAction(new EventHandler<ActionEvent>() {
             
             @Override
@@ -31,8 +35,16 @@ public class HackCEWIT2018 extends Application {
             }
         });
         
-        StackPane root = new StackPane();
-        root.getChildren().add(btn);
+        VBox root = new VBox();
+        HBox userNameRow = new HBox();
+        HBox pwRow = new HBox();
+        Label usrName = new Label("User name: ");
+        Label pw = new Label("Password: ");
+        TextField username = new TextField();
+        PasswordField password = new PasswordField();
+        userNameRow.getChildren().addAll(usrName, username);
+        pwRow.getChildren().addAll(pw, password);
+        root.getChildren().addAll(userNameRow, pwRow, btn);
         
         Scene scene = new Scene(root, 300, 250);
         
