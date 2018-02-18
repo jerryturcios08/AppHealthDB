@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a6c595d-1e50-438c-a359-624f8736199e" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Clinic.htm" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Website/Clinic.htm" afterPath="$PROJECT_DIR$/web/Clinic.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppHealthDB/ClientProfile.java" afterPath="$PROJECT_DIR$/src/AppHealthDB/ClientProfile.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppHealthDB/PatientExplorer.java" afterPath="$PROJECT_DIR$/src/AppHealthDB/PatientExplorer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppHealthDB/StartupPage.java" afterPath="$PROJECT_DIR$/src/AppHealthDB/StartupPage.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,7 +30,12 @@
     <expand>
       <path>
         <item name="" type="eadb38e5:DatabaseStructure$Root" />
-        <item name="@localhost" type="e3449647:DbNodeDescriptor" />
+        <item name="jdbc:hsqldb:file:/Users/jerryturcios08/Documents/JetBrains/DataGrip/AppHealthDB/Accounts/" type="e3449647:DbNodeDescriptor" />
+      </path>
+      <path>
+        <item name="" type="eadb38e5:DatabaseStructure$Root" />
+        <item name="jdbc:hsqldb:file:/Users/jerryturcios08/Documents/JetBrains/DataGrip/AppHealthDB/Accounts/" type="e3449647:DbNodeDescriptor" />
+        <item name="PUBLIC" type="e3449647:DbNodeDescriptor" />
       </path>
     </expand>
     <select />
@@ -44,12 +45,22 @@
       <file leaf-file-name="PatientExplorer.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/AppHealthDB/PatientExplorer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="637">
-              <caret line="71" column="46" lean-forward="false" selection-start-line="71" selection-start-column="46" selection-end-line="71" selection-end-column="46" />
+            <state relative-caret-position="1095">
+              <caret line="73" column="0" lean-forward="false" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1518908286709" expanded="true" signature="2485:2490" ph="{...}" />
+                <marker date="1518943413436" expanded="true" signature="2485:2490" ph="{...}" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="console.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/4313b484-5d61-40a5-a653-9e4e122b6b20/console.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="58" lean-forward="true" selection-start-line="1" selection-start-column="58" selection-end-line="1" selection-end-column="58" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -89,9 +100,12 @@
         <option value="$PROJECT_DIR$/src/AppHealthDB/CoreApplication.java" />
         <option value="$PROJECT_DIR$/src/AppHealthDB/StartupPage.java" />
         <option value="$PROJECT_DIR$/src/AppHealthDB/ClientProfile.java" />
-        <option value="$PROJECT_DIR$/src/AppHealthDB/PatientExplorer.java" />
         <option value="$PROJECT_DIR$/src/AppHealthDB/PatientExplore.form" />
         <option value="$PROJECT_DIR$/web/Clinic.html" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/578f89f0-87d5-4bb6-9e1f-0999d291042e/console.sql" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/cb4e2efa-181c-4d40-9d93-be41ba0b56e4/console.sql" />
+        <option value="$PROJECT_DIR$/src/AppHealthDB/PatientExplorer.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/4313b484-5d61-40a5-a653-9e4e122b6b20/console.sql" />
       </list>
     </option>
   </component>
@@ -173,7 +187,8 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL&#10;Amazon Redshift&#10;Sqlite (Xerial)" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="DDL Data Source&#10;MySQL&#10;Amazon Redshift&#10;Sqlite (Xerial)" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$2/SQL Dialects" value="GenericSQL&#10;SQLite&#10;HSQLDB" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -312,12 +327,12 @@
       <workItem from="1518863453012" duration="2508000" />
       <workItem from="1518877826330" duration="18600000" />
       <workItem from="1518933153377" duration="166000" />
-      <workItem from="1518939654860" duration="797000" />
+      <workItem from="1518939654860" duration="3614000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33461000" />
+    <option name="totallyTimeSpent" value="36278000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
@@ -329,7 +344,7 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329602" sideWeight="0.5084746" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3283582" sideWeight="0.5028612" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921347" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329602" sideWeight="0.4915254" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32992327" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -350,6 +365,7 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329602" sideWeight="0.49713877" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -405,7 +421,7 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1518908286709" expanded="true" signature="2485:2490" ph="{...}" />
+            <marker date="1518943413436" expanded="true" signature="2485:2490" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -416,7 +432,7 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1518908286709" expanded="true" signature="2485:2490" ph="{...}" />
+            <marker date="1518943413436" expanded="true" signature="2485:2490" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -448,13 +464,6 @@
             <caret line="4" column="24" lean-forward="false" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
           </first_editor>
           <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/578f89f0-87d5-4bb6-9e1f-0999d291042e/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -570,13 +579,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/578f89f0-87d5-4bb6-9e1f-0999d291042e/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/9d6a42f7-aec2-42a9-9de6-28f761e6da59/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/cb4e2efa-181c-4d40-9d93-be41ba0b56e4/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/4313b484-5d61-40a5-a653-9e4e122b6b20/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="58" lean-forward="true" selection-start-line="1" selection-start-column="58" selection-end-line="1" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/AppHealthDB/PatientExplorer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="637">
-          <caret line="71" column="46" lean-forward="false" selection-start-line="71" selection-start-column="46" selection-end-line="71" selection-end-column="46" />
+        <state relative-caret-position="1095">
+          <caret line="73" column="0" lean-forward="false" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1518908286709" expanded="true" signature="2485:2490" ph="{...}" />
+            <marker date="1518943413436" expanded="true" signature="2485:2490" ph="{...}" />
           </folding>
         </state>
       </provider>

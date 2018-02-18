@@ -1,19 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="@localhost" uuid="578f89f0-87d5-4bb6-9e1f-0999d291042e">
-      <driver-ref>mysql</driver-ref>
+    <data-source source="LOCAL" name="jdbc:hsqldb:file:/Users/jerryturcios08/Documents/JetBrains/DataGrip/AppHealthDB/Accounts/" uuid="4313b484-5d61-40a5-a653-9e4e122b6b20">
+      <driver-ref>hsqldb.local</driver-ref>
       <synchronize>true</synchronize>
-      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://localhost:3306</jdbc-url>
-      <driver-properties>
-        <property name="autoReconnect" value="true" />
-        <property name="zeroDateTimeBehavior" value="convertToNull" />
-        <property name="tinyInt1isBit" value="false" />
-        <property name="characterEncoding" value="utf8" />
-        <property name="characterSetResults" value="utf8" />
-        <property name="yearIsDateType" value="false" />
-      </driver-properties>
+      <configured-by-url>true</configured-by-url>
+      <jdbc-driver>org.hsqldb.jdbc.JDBCDriver</jdbc-driver>
+      <jdbc-url>jdbc:hsqldb:file:$PROJECT_DIR$/../../DataGrip/AppHealthDB/Accounts/</jdbc-url>
+      <default-dialect>PostgreSQL</default-dialect>
     </data-source>
   </component>
 </project>
