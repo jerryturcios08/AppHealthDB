@@ -1,6 +1,8 @@
 package AppHealthDB;
 
 import java.util.Date;
+
+import javafx.scene.Node;
 import javafx.scene.image.Image;
 
 /*
@@ -13,7 +15,7 @@ import javafx.scene.image.Image;
  *
  * @author dsli
  */
-public class ClientProfile {
+public abstract class ClientProfile extends Node {
 
     private String name;
     private Address address;

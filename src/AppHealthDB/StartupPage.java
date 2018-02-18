@@ -80,6 +80,7 @@ public class StartupPage extends Application {
         // TODO: Create a way for the window to open
 
         signUpBtn.setOnAction(e -> SignUpPage());
+
         signInBtn.setOnAction(e -> transfer.explorer());
     }
 

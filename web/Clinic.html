@@ -2,26 +2,24 @@
   <head>
     <title>American Clinic</title>
 	<style>
-  #map {
-    height: 200px;
-	width:200px;
-  }
-  html, body {
-    height: 200px;
-    margin: 0;
-    padding: 0;
-  }
-</style>
+    #map {
+      height: 200px;
+	  width: 200px;
+    }
+    html, body {
+      height: 200px;
+      margin: 0;
+      padding: 0;
+    }
+    </style>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </head>
-  
   <!-- Begins the Body Part -->
   <body>
-	
 	<div class="container"><br><br><br>
       <div class="jumbotron text-center">
         <h1>American Health</h1>
@@ -31,20 +29,19 @@
           <h4>Click on the buttons below to access book search functionality, book loans functionality, borrower management functionality, as well as to access fines!</h4>
         </div>
       </div><br><br>
-	<ul class="nav nav-pills nav-justified">
+      <ul class="nav nav-pills nav-justified">
         <li  class="active"><a style = "color: black;" data-toggle="tab" href="#appointment">Book Appointment</a></li>
         <li><a style = "color: black;" data-toggle="tab" href="#fees">Pay the fees</a></li>
         <li><a style = "color: black;" data-toggle="tab" href="#checkcost">Check the available treatments</a></li>
 		<li><a style = "color: black;" data-toggle="tab" href="#patient">Add Patient</a></li>
-     </ul>
-	 <div class="tab-content">
+      </ul>
+	  <div class="tab-content">
         <div id="appointment" class="tab-pane fade in active">
           <h3>Search Appointment</h3>
           <p>Search below for booking an appointment</p>
           <form method="post" action="/searchresult">
             <div class="form-group">
               <label for="searchField">Search</label>
-              
 			  <input id="searchField" type="datetime-local" name="hi" value="2017-06-01T08:30">
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
@@ -76,7 +73,7 @@
             <button type="submit" class="btn btn-primary">Check</button>
           </form>
         </div>
-		<div id="patient" class="tab-pane fade">
+        <div id="patient" class="tab-pane fade">
 		<h3>Add Patient</h3>
           <p>Fill in the information below in order to add new patients into the system.</p>
           <form method="post" action="/add">
@@ -99,3 +96,7 @@
             <button type="submit" class="btn btn-primary">Add Patient</button>
           </form>
         </div>
+      </div>
+    </div>
+  </body>
+</html>
