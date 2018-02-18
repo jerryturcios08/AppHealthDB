@@ -61,7 +61,6 @@
       <list>
         <option value="$PROJECT_DIR$/src/AppHealthDB.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/hackcewit2018/PatientExplorer.java" />
         <option value="$PROJECT_DIR$/src/hackcewit2018/createAccount.java" />
         <option value="$PROJECT_DIR$/src/hackcewit2018/CreateAccount.java" />
@@ -78,6 +77,7 @@
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/cb4e2efa-181c-4d40-9d93-be41ba0b56e4/console.sql" />
         <option value="$PROJECT_DIR$/src/AppHealthDB/PatientExplorer.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/4313b484-5d61-40a5-a653-9e4e122b6b20/console.sql" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -295,12 +295,20 @@
       <workItem from="1518877826330" duration="18600000" />
       <workItem from="1518933153377" duration="166000" />
       <workItem from="1518939654860" duration="3614000" />
-      <workItem from="1518961036484" duration="42000" />
+      <workItem from="1518961036484" duration="483000" />
     </task>
+    <task id="LOCAL-00001" summary="Update README.md">
+      <created>1518963253099</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1518963253099</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36320000" />
+    <option name="totallyTimeSpent" value="36761000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
@@ -370,6 +378,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Update README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update README.md" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -443,16 +455,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AppHealthDB.java" />
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="60">
-            <caret line="4" column="24" lean-forward="false" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/javafx-src.zip!/javafx/application/Application.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="233">
@@ -601,6 +603,17 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="14" lean-forward="false" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
